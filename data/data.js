@@ -1,4 +1,4 @@
-export const activitiesArray = [
+export const activities = 
   {
     title: "Activities",
     description:
@@ -26,10 +26,9 @@ export const activitiesArray = [
         link: "https://www.macaotourism.gov.mo/en/shows-and-entertainment/family-fun/macao-giant-panda-pavilion",
       },
     ],
-  },
-];
+  };
 
-export const restaurantsArray = [
+export const restaurants = 
   {
     title: "Eat & Drink",
     description:
@@ -57,5 +56,4 @@ export const restaurantsArray = [
         link: "https://www.macaotourism.gov.mo/en/dining/specialty-foods/coffee-shops-and-noodle-shops/tai-lei-loi-kei-restaurant",
       },
     ],
-  },
-];
+  };

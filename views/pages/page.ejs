@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-   <%- include('../partials/head') %>
-<body>
-  <%- include('../partials/header.ejs') %>
-  <h1 class="page-title"><%= title %></h1>
-  <% if (locals.description) { %>
-    <p class="description"><%= description %></p>
-  <% } %>
-  <%- include('../partials/footer.ejs') %>
-</body>
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/header.ejs') %>
+    <h1 class="page-title"><%= title %></h1>
+    <% if (locals.description) { %>
+      <p class="description"><%= description %></p>
+    <% } %>
+    <% if (locals.data) { %>
+      <p class="description"><%= data.description %></p>
+      <div class="card-wrapper">
+        
+      </div>
+    <% } %>
+    <%- include('../partials/footer.ejs') %>
+  </body>
 </html>
