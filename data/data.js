@@ -1,3 +1,14 @@
+export const infoArray = [
+  {
+    title: "Activities",
+    description: "Think Macau is only about gambling and casinos? Think again! This dynamic city is packed with adventure, culture, and outdoor fun. Walk historic streets, conquer sky-high thrills, explore museums, relax on beaches, or meet giant pandas in peaceful parks. From adrenaline rushes to family-friendly attractions, Macau proves that excitement comes in many forms—far beyond the gaming tables."
+  },
+    {
+    title: "Eat & Drink",
+    description: "Macau’s cuisine is a delicious fusion of Chinese, Portuguese, and Southeast Asian flavors, creating one of Asia’s most unique food cultures. From famous egg tarts and pork chop buns to rich curries and fresh seafood, every bite tells a story of heritage and creativity. Whether you’re dining by the sea or sampling street food, Macau promises a flavorful journey you won’t forget."
+  } 
+]
+
 export const activitiesArray = [
   {
     name: "Macau Tower Convention & Entertainment Center",
