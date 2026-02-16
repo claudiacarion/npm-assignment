@@ -4,6 +4,9 @@
 <body>
   <%- include('../partials/header.ejs') %>
   <h1 class="page-title"><%= title %></h1>
+  <% if (locals.description) { %>
+    <p class="description"><%= description %></p>
+  <% } %>
   <%- include('../partials/footer.ejs') %>
 </body>
 </html>
