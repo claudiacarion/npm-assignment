@@ -8,10 +8,10 @@ const __dirname = path.resolve();
 restaurantsRouter.get("/", (req, res) => {
   res.render(path.join(__dirname, "views/pages/page"), {
     type: "subpage",
+    page: "activities",
     data: restaurants,
     title: restaurants.title,
-    active: "restaurants"
-  })
-})
+  });
+});
 
 export default restaurantsRouter;
