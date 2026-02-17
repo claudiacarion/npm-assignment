@@ -2,8 +2,11 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 8px;
-  position: relative;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo-wrapper {
