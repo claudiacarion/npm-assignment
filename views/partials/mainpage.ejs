@@ -1,0 +1,18 @@
+    <% if (locals.description) { %>
+      <p class="description"><%= description %></p>
+    <% } %>
+    <% if (locals.data) { %>
+      <p class="description"><%= data.description %></p>
+      <% if (data.items) { %>
+        <div class="card-container">
+          <% data.items.forEach(item => { %>
+          <a href="/<%= page %>/<%= item.slug %>" class="item-link">
+            <div class="card-wrapper">
+              <h4 class="item-name"><%= item.name %></h4>
+              <img src="<%= item.image %>" height="200" width="auto" alt="image"/>
+            </div>
+          </a>
+          <% }) %>
+        </div>
+      <% } %>
+    <% } %>
