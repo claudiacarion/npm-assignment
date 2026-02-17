@@ -9,8 +9,8 @@ activitiesRouter.get("/", (req, res) => {
   res.render(path.join(__dirname, "views/pages/page"), {
     type: "subpage",
     subpage: "activities",
-    title: "Explore",
-    array: activitiesArray,
+    data: activities,
+    title: activities.title,
   })
 })
 
