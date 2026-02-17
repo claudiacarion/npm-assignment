@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.render(path.join(__dirname, "views/pages/page.ejs"), {
     title: "Welcome to Macau!",
-    active: "home"
+    page: "home"
   })
 });
 
