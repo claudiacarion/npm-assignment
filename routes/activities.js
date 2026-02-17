@@ -37,6 +37,7 @@ activitiesRouter.get("/:slug", (req, res) => {
     page: "activities",
     data: activitiesSlugs,
     title: item.name, 
+    selected: [item],
   })
 })
 

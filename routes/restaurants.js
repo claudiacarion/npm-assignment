@@ -37,6 +37,7 @@ restaurantsRouter.get("/:slug", (req, res) => {
     page: "restaurants",
     data: restaurantsSlugs,
     title: item.name, 
+    selected: [item],
   })
 })
 

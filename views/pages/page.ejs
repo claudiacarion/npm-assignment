@@ -3,17 +3,17 @@
   <%- include('../partials/head') %>
   <body>
     <%- include('../partials/header.ejs') %>
-    <main>
-    <h1 class="page-title"><%= title %></h1> 
-    <% if (locals.type) { %>
-      <% if (type === "page") { %>
-        <%- include('../partials/mainpage.ejs') %>
+    <main class="main-container">
+      <h1 class="page-title"><%= title %></h1> 
+      <% if (locals.type) { %>
+        <% if (type === "page") { %>
+          <%- include('../partials/mainpage.ejs') %>
+        <% } %>
+        <% if (type === "subpage") { %>
+          <%- include('../partials/subpage.ejs') %>
+        <% } %>
       <% } %>
-      <% if (type === "subpage") { %>
-        <%- include('../partials/subpage.ejs') %>
-      <% } %>
-    <% } %>
-    <%- include('../partials/footer.ejs') %>
+      <%- include('../partials/footer.ejs') %>
     </main>
   </body>
 </html>
