@@ -7,8 +7,9 @@ const __dirname = path.resolve();
 
 activitiesRouter.get("/", (req, res) => {
   res.render(path.join(__dirname, "views/pages/page"), {
-    title: "Explore",
+    type: "subpage",
     data: activities,
+    title: activities.title,
     active: "activities"
   })
 })

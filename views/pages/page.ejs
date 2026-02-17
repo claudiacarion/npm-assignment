@@ -9,9 +9,16 @@
     <% } %>
     <% if (locals.data) { %>
       <p class="description"><%= data.description %></p>
-      <div class="card-wrapper">
-        
+      <% if (data.items) { %>
+      <div class="card-container">
+        <% data.items.forEach(item => { %>
+        <div class="card-wrapper">
+          <h4 class="item-name"><%= item.name %></h4>
+          <img src="<%= item.image %>" height="200" width="auto" alt="image"/>
+        </div>
+        <% }) %>
       </div>
+    <% } %>
     <% } %>
     <%- include('../partials/footer.ejs') %>
   </body>
