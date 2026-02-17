@@ -1,6 +1,6 @@
 import express from "express";
 import * as path from "path";
-import { activitiesArray } from '../data/data';
+import { activitiesArray } from '../data/data.js';
 
 const activitiesRouter = express.Router();
 const __dirname = path.resolve();

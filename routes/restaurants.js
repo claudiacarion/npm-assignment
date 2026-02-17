@@ -1,6 +1,6 @@
 import express from "express";
 import * as path from "path";
-import { restaurantsArray } from "../data/data";
+import { restaurantsArray } from "../data/data.js";
 
 const restaurantsRouter = express.Router();
 const __dirname = path.resolve();
