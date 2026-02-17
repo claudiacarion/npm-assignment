@@ -1,8 +1,12 @@
 <header class="header">
   <div class="logo-wrapper">
-    <img src="/images/logo.png" width="100" height="auto" class="logo">
+    <a href="/">
+      <img src="/images/logo.png" width="100" height="auto" class="logo">
+    </a>
   </div>
-  <h1 class="header__title">Discover Macau</h1> 
+  <button class="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </button>
   <nav class="navbar"> 
     <a href="/" class="nav-btn <%= page === "home" ? "active" : "" %>">Home</a> 
     <a href="/activities" class="nav-btn <%= page === "activities" ? "active" : "" %>">Activities</a> 

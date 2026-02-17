@@ -1,0 +1,43 @@
+.item-card {
+  margin: 16px;
+  max-width: 1000px;
+}
+
+.item-image-container {
+  aspect-ratio: 1 / 1;
+}
+
+.item-image-container img {
+  border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.item-card a {
+  color: var(--tertiary);
+  display: block;
+  font-family: "Boldonse";
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+.item-card a:active {
+  color: var(--secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .item-card {
+    margin: 16px auto;
+  }
+
+  .item-image-container {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  .item-card a:hover {
+    color: var(--secondary);
+  }
+}

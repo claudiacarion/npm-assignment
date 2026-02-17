@@ -1,17 +1,17 @@
-    <% if (locals.description) { %>
-      <p class="description"><%= description %></p>
-    <% } %>
-    <% if (locals.data) { %>
-      <p class="description"><%= data.description %></p>
-      <% if (data.items) { %>
-        <div class="card-container">
-          <% data.items.forEach(item => { %>
-          <a href="/<%= page %>/<%= item.slug %>" class="item-link">
-            <div class="card-wrapper card-bg" style="background-image: url('<%= item.image %>')">
-              <h4 class="item-name"><%= item.name %></h4>
-            </div>
-          </a>
-          <% }) %>
+<% if (locals.description) { %>
+  <p class="description"><%= description %></p>
+<% } %>
+<% if (locals.data) { %>
+  <p class="description"><%= data.description %></p>
+  <% if (data.items) { %>
+    <div class="card-container">
+      <% data.items.forEach(item => { %>
+      <a href="/<%= page %>/<%= item.slug %>" class="item-link">
+        <div class="card" style="background-image: linear-gradient(var(--main-color-overlay), var(--main-color-overlay)), url('<%= item.image %>')">
+          <h4 class="item-name"><%= item.name %></h4>
         </div>
-      <% } %>
-    <% } %>
+      </a>
+      <% }) %>
+    </div>
+  <% } %>
+<% } %>
