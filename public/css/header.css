@@ -1,11 +1,13 @@
 .header {
   align-items: center;
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
-  padding: 16px;
-  position: fixed;
+  padding: 8px;
+  position: sticky;
   top: 0;
   width: 100%;
+  transition: transform 0.3s ease;
   z-index: 1000;
 }
 
@@ -23,13 +25,14 @@
 }
 
 .nav-btn {
+  color: var(--tertiary);
   display: inline-block;
+  font-family: "Boldonse";
   min-width: max-content;
   padding: 16px;
 }
 
 .active {
-text-shadow: 0 0 0.5px currentColor;
+  text-shadow: 0 0 0.5px currentColor;
 }
 
-@media screen and (min-width: 768px) {}

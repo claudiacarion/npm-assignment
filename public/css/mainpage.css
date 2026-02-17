@@ -3,11 +3,11 @@
 }
 
 .page-title {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("/images/background.jpg");
+  background-image: linear-gradient(var(--main-color-overlay), var(--main-color-overlay)), url("/images/background.jpg");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
-  color: #fff;
+  color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,8 @@
 @media screen and (min-width: 768px) {
   .page-title {
     background-position: center;
-    height: 70vh;
+    font-size: 3rem;
+    height: 60vh;
   }
 
   .description,

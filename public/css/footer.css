@@ -1,3 +1,18 @@
 .footer {
+  margin-top: 32px;
   text-align: center;
+}
+
+.footer a {
+  color: var(--tertiary);
+}
+
+.footer a:active {
+  color: var(--secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .footer a:hover {
+    color: var(--secondary);
+  }
 }
