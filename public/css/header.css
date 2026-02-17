@@ -1,0 +1,32 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  position: relative;
+}
+
+.logo-wrapper {
+  flex: 0 0 auto;
+  width: 100px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-btn {
+  display: inline-block;
+  min-width: max-content;
+  padding: 16px;
+}
+
+.active {
+text-shadow: 0 0 0.5px currentColor;
+}
+
+@media screen and (min-width: 768px) {}
