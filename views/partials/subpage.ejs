@@ -1,0 +1,11 @@
+<% if (locals.data) { %>
+  <% selected.forEach(item => { %>
+    <div class="item-card">
+      <div class="item-image-container">
+        <img src="<%= item.image %>" height="300" width="auto" alt="item image"/>
+      </div>
+      <p class="item-description"><%= item.description %></p>
+      <a href="<%= item.link %>" target="_blank">Read More</a>
+    </div>
+  <% }) %>
+<% } %>
