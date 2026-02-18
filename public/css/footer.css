@@ -1,5 +1,6 @@
 .footer {
-  margin-top: 32px;
+  background-color: var(--primary);
+  padding-top: 32px;
   text-align: center;
 }
 

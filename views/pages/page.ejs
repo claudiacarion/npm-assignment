@@ -4,7 +4,7 @@
   <body>
     <%- include('../partials/header.ejs') %>
     <main class="main-container">
-      <h1 class="page-title"><%= title %></h1> 
+      <h1 class="page-title animate__animated animate__fadeIn" style="background-image: linear-gradient(var(--main-color-overlay), var(--main-color-overlay)), url('<%= locals.selected ? selected[0].background : background %>')"><%= title %></h1> 
       <% if (locals.type) { %>
         <% if (type === "page") { %>
           <%- include('../partials/mainpage.ejs') %>

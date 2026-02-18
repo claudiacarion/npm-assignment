@@ -1,7 +1,7 @@
 import express from "express";
 import * as path from "path";
-import { activities } from '../data/data.js';
-import { slugify } from '../utils/slugify.js';
+import { activities } from "../data/data.js";
+import { slugify } from "../utils/slugify.js";
 
 const activitiesRouter = express.Router();
 const __dirname = path.resolve();
@@ -10,9 +10,9 @@ const activitiesSlugs = {
   ...activities,
   items: activities.items.map(item => ({
     ...item,
-    slug: slugify(item.name)
-  }))
-}
+    slug: slugify(item.name),
+  })),
+};
 
 activitiesRouter.get("/", (req, res) => {
   res.render(path.join(__dirname, "views/pages/page"), {
@@ -20,8 +20,9 @@ activitiesRouter.get("/", (req, res) => {
     page: "activities",
     data: activitiesSlugs,
     title: activities.title,
-  })
-})
+    background: "/images/activities_background.jpg",
+  });
+});
 
 activitiesRouter.get("/:slug", (req, res) => {
   const { slug } = req.params;
@@ -31,14 +32,15 @@ activitiesRouter.get("/:slug", (req, res) => {
   if (!item) {
     return res.status(404).send("Page not found");
   }
-
+  
   res.render(path.join(__dirname, "views/pages/page"), {
     type: "subpage",
     page: "activities",
     data: activitiesSlugs,
-    title: item.name, 
+    title: item.name,
     selected: [item],
-  })
-})
+    background: item.backgorund
+  });
+});
 
-export default activitiesRouter
+export default activitiesRouter;
