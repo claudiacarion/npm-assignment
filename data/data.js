@@ -10,6 +10,7 @@ export const activities = {
       image: "/images/tower.jpg",
       address: "Largo da Torre de Macau, Macau",
       link: "https://www.macautower.com.mo/",
+      background: "/images/tower_background.jpg",
     },
     {
       name: "Macao Grand Prix Museum",
@@ -18,6 +19,7 @@ export const activities = {
       image: "/images/grandprix.jpeg",
       address: "431 Rua de Luís Gonzaga Gomes, Macau",
       link: "https://mgpm.macaotourism.gov.mo/en/",
+      background: "/images/grandprix_background.png",
     },
     {
       name: "Giant Panda Pavillion",
@@ -26,6 +28,7 @@ export const activities = {
       image: "/images/panda.jpg",
       address: "Estrada de Seac Pai Van, Seac Pai Van Park, Macau",
       link: "https://www.macaotourism.gov.mo/en/shows-and-entertainment/family-fun/macao-giant-panda-pavilion",
+      background: "/images/panda_background.jpg",
     },
   ],
 };
@@ -42,6 +45,7 @@ export const restaurants = {
       image: "/images/lordstows.jpg",
       address: "Rua do Tassara, 1, Coloane Village, Macau",
       link: "https://www.lordstow.com/macau-outlets/",
+      background: "/images/lordstows_background.jpg",
     },
     {
       name: "Fernando's Restaurant",
@@ -50,6 +54,7 @@ export const restaurants = {
       image: "/images/fernandos.jpg",
       address: "No. 9 Hac Sa Beach, Coloane, Macau",
       link: "https://macaulifestyle.com/city-guide/fernandos-restaurant/",
+      background: "/images/fernandos_background.jpg",
     },
     {
       name: "Tai Lei Loi Kei Porkchop Bun",
@@ -58,6 +63,7 @@ export const restaurants = {
       image: "/images/porkchopbun.jpg",
       address: "Rua Correia da Silva, Taipa, Macau",
       link: "https://www.macaotourism.gov.mo/en/dining/specialty-foods/coffee-shops-and-noodle-shops/tai-lei-loi-kei-restaurant",
+      background: "/images/tailei_background.jpg",
     },
   ],
 };
