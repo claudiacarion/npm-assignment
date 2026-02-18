@@ -1,9 +1,9 @@
 .main-container {
+  background-color: var(--primary);
   flex-grow: 1;
 }
 
 .page-title {
-  background-image: linear-gradient(var(--main-color-overlay), var(--main-color-overlay)), url("/images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

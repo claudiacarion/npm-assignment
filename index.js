@@ -17,7 +17,8 @@ app.get("/", (req, res) => {
     type: "page",
     title: "Welcome to Macau!",
     description: "Welcome to Macau, where East meets West in a city full of color, culture, and excitement. From iconic landmarks and seaside villages to thrilling adventures and world-class dining, Macau offers unforgettable experiences at every turn. Whether you’re seeking relaxation, discovery, or heart-pounding fun, your journey starts here—let us guide you to the very best this vibrant destination has to offer.",
-    page: "home"
+    page: "home",
+    background: "/images/background.jpg"
   })
 });
 

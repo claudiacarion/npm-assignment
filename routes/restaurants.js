@@ -1,7 +1,7 @@
 import express from "express";
 import * as path from "path";
-import { restaurants } from '../data/data.js';
-import { slugify } from '../utils/slugify.js';
+import { restaurants } from "../data/data.js";
+import { slugify } from "../utils/slugify.js";
 
 const restaurantsRouter = express.Router();
 const __dirname = path.resolve();
@@ -10,9 +10,9 @@ const restaurantsSlugs = {
   ...restaurants,
   items: restaurants.items.map(item => ({
     ...item,
-    slug: slugify(item.name)
-  }))
-}
+    slug: slugify(item.name),
+  })),
+};
 
 restaurantsRouter.get("/", (req, res) => {
   res.render(path.join(__dirname, "views/pages/page"), {
@@ -20,8 +20,9 @@ restaurantsRouter.get("/", (req, res) => {
     page: "restaurants",
     data: restaurantsSlugs,
     title: restaurants.title,
-  })
-})
+    background: "/images/food_background.jpg",
+  });
+});
 
 restaurantsRouter.get("/:slug", (req, res) => {
   const { slug } = req.params;
@@ -36,9 +37,10 @@ restaurantsRouter.get("/:slug", (req, res) => {
     type: "subpage",
     page: "restaurants",
     data: restaurantsSlugs,
-    title: item.name, 
+    title: item.name,
     selected: [item],
-  })
-})
+    background: item.background
+  });
+});
 
 export default restaurantsRouter;
