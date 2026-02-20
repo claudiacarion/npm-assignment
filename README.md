@@ -41,6 +41,9 @@ Discover Macau is a responsive travel website designed to introduce users to the
 - Express
 - NPM
 - Vercel
+- HTML
+- CSS
+- Vanilla JS
 
 ---
 
